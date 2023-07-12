@@ -48,10 +48,12 @@ public class BankAccount {
     }
 
     public int getAccountNumber() {
+
         return this.accountNumber;
     }
 
     public void setAccountNumber(int updatedAccountNumber) {
+
         this.accountNumber = updatedAccountNumber;
     }
 
@@ -60,11 +62,12 @@ public class BankAccount {
     }
 
     public void setBalance(double updatedBalance) {
+
         this.balance = updatedBalance;
     }
 
-    public double deposit(double moneyDeposited) {
-        return this.balance += moneyDeposited;
+    public void deposit(double moneyDeposited) {
+        this.balance += moneyDeposited;
     }
 
     public double withdraw(double moneyWithdrawn) {

@@ -92,8 +92,9 @@ public class BankAccountTest {
     }
     @Test
     public void canDeposit(){
-        double actual = bankAccount.deposit(20.20);
-        double expected = bankAccount.getBalance();
+        bankAccount.deposit(20.20);
+        double actual = bankAccount.getBalance();
+        double expected = 20.20;
         assertThat(actual).isEqualTo(expected);
     }
 
