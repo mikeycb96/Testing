@@ -11,7 +11,7 @@ public class BankAccountTest {
 
     @BeforeEach
     public void setUP(){
-        bankAccount = new BankAccount();
+        bankAccount = new BankAccount("Mikey","Baptist", LocalDate.of(1995, 5, 5), 12345678);
     }
 
     @Test
@@ -56,7 +56,7 @@ public class BankAccountTest {
     public void canSetDateOfBirth(){
         bankAccount.setDateOfBirth(LocalDate.of(1995,5,5));
         String actual = String.valueOf(bankAccount.getDateOfBirth());
-        String expected = "1995-05-05";
+        String expected = "1995-5-5";
         assertThat(actual).isEqualTo(expected);
     }
 

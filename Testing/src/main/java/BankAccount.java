@@ -9,7 +9,7 @@ public class BankAccount {
     private double balance;
     
 
-    public BankAccount(){
+    public BankAccount(String firstName, String lastName, LocalDate dateOfBirth, int accountNumber){
         this.firstName = firstName;
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
